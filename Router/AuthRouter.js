@@ -1,5 +1,4 @@
 import  express from 'express'
-
 const expressRouter=express.Router()
 import   bcrypt from 'bcrypt'
 import {isAuth,generateToken} from '../middleware/auth.js'
@@ -10,9 +9,6 @@ import User from '../Model/UserModel.js';
 
 // use here  your Mail Key 
 sgMail.setApiKey(process.env.MAIL_KEY);
-
-
-
 
 
 class AuthRouter{
